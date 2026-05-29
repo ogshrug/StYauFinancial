@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42f56a3b-bac0-4e60-8038-2319e7d92cef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/brsr_research/download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/brsr_research/mergi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/brsr_research/sampli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="42f56a3b-bac0-4e60-8038-2319e7d92cef" name="Changes" comment="7">
+      <change afterPath="$PROJECT_DIR$/brsr_research/regressioni.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="791dd0b9-3b6f-4eac-8f49-914ceeb71585" name="Changes by Aarav Gupta" comment="" />
@@ -61,7 +58,10 @@
     "Python.download.executor": "Run",
     "Python.main.executor": "Run",
     "Python.mergi.executor": "Run",
+    "Python.ploti.executor": "Run",
+    "Python.regressioni.executor": "Run",
     "Python.sampli.executor": "Run",
+    "Python.spreadi.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -128,8 +128,17 @@
       <updated>1780072540675</updated>
       <workItem from="1780072541711" duration="504000" />
       <workItem from="1780073514492" duration="2152000" />
-      <workItem from="1780075693342" duration="332000" />
+      <workItem from="1780075693342" duration="702000" />
     </task>
+    <task id="LOCAL-00001" summary="7">
+      <option name="closed" value="true" />
+      <created>1780076274121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1780076274121</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +154,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="7" />
+    <option name="LAST_COMMIT_MESSAGE" value="7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -164,5 +177,6 @@
     <SUITE FILE_PATH="coverage/StYauFinancial$main.coverage" NAME="main Coverage Results" MODIFIED="1780075936182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StYauFinancial$download.coverage" NAME="download Coverage Results" MODIFIED="1780074761267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/brsr_research" />
     <SUITE FILE_PATH="coverage/StYauFinancial$spreadi.coverage" NAME="spreadi Coverage Results" MODIFIED="1780076084999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/brsr_research" />
+    <SUITE FILE_PATH="coverage/StYauFinancial$regressioni.coverage" NAME="regressioni Coverage Results" MODIFIED="1780076364875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/brsr_research" />
   </component>
 </project>
