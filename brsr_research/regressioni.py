@@ -3,8 +3,7 @@ import numpy as np
 import statsmodels.formula.api as smf
 from statsmodels.iolib.summary2 import summary_col
 
-OUTPUT_FOLDER = r"./output"
-
+OUTPUT_FOLDER = r"C:\Users\armaan\PycharmProjects\StYauFinancial\brsr_research\output"
 print("Loading spreads...")
 df = pd.read_parquet(f"{OUTPUT_FOLDER}/spreads.parquet")
 
@@ -41,31 +40,37 @@ m2 = smf.ols(
 ).fit(cov_type="HC3")
 print(m2.summary().tables[1])
 
-# ── Model 3: Both events + firm fixed effects ─────────────────────────────────
+# ── Model 3: Both events + firm fixed effects (memory efficient) ──────────────
 print("\nModel 3: Both events + firm fixed effects (main specification)")
+
+# Demean by firm (within-transformation — equivalent to firm FE)
+vars_to_demean = ["LOG_SPREAD", "DiD1", "DiD2", "POST1", "POST2"]
+df_demean = df[vars_to_demean + ["SYMBOL"]].copy()
+firm_means = df_demean.groupby("SYMBOL")[vars_to_demean].transform("mean")
+df_within  = df_demean[vars_to_demean] - firm_means
+
 m3 = smf.ols(
-    "LOG_SPREAD ~ DiD1 + DiD2 + POST1 + POST2 + C(SYMBOL)",
-    data=df
+    "LOG_SPREAD ~ DiD1 + DiD2 + POST1 + POST2",
+    data=df_within
 ).fit(cov_type="HC3")
 
-# Print only DiD coefficients (not the hundreds of firm FE)
 params = m3.params[["DiD1", "DiD2", "POST1", "POST2"]]
 pvals  = m3.pvalues[["DiD1", "DiD2", "POST1", "POST2"]]
 conf   = m3.conf_int().loc[["DiD1", "DiD2", "POST1", "POST2"]]
+
 print(pd.DataFrame({
-    "Coef": params.round(4),
+    "Coef"   : params.round(4),
     "P-value": pvals.round(4),
-    "CI_low": conf[0].round(4),
+    "CI_low" : conf[0].round(4),
     "CI_high": conf[1].round(4)
 }))
 print(f"\nR-squared : {m3.rsquared:.4f}")
 print(f"N         : {len(df):,}")
 
-# ── Save results ──────────────────────────────────────────────────────────────
 results = pd.DataFrame({
     "Coef": m3.params[["DiD1", "DiD2", "POST1", "POST2"]],
-    "SE":   m3.bse[["DiD1", "DiD2", "POST1", "POST2"]],
-    "P":    m3.pvalues[["DiD1", "DiD2", "POST1", "POST2"]],
+    "SE"  : m3.bse[["DiD1", "DiD2", "POST1", "POST2"]],
+    "P"   : m3.pvalues[["DiD1", "DiD2", "POST1", "POST2"]],
 })
 results.to_csv(f"{OUTPUT_FOLDER}/regression_results.csv")
 print(f"\nSaved regression_results.csv")

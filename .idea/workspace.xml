@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42f56a3b-bac0-4e60-8038-2319e7d92cef" name="Changes" comment="7">
-      <change afterPath="$PROJECT_DIR$/brsr_research/regressioni.py" afterDir="false" />
+    <list default="true" id="42f56a3b-bac0-4e60-8038-2319e7d92cef" name="Changes" comment="7v2">
+      <change afterPath="$PROJECT_DIR$/brsr_research/pretendsi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opencode.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opencoder.ps1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <list id="791dd0b9-3b6f-4eac-8f49-914ceeb71585" name="Changes by Aarav Gupta" comment="" />
+    <list id="791dd0b9-3b6f-4eac-8f49-914ceeb71585" name="Changes by Aarav Gupta" comment="">
+      <change beforePath="$PROJECT_DIR$/brsr_research/regressioni.py" beforeDir="false" afterPath="$PROJECT_DIR$/brsr_research/regressioni.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brsr_research/spreadi.py" beforeDir="false" afterPath="$PROJECT_DIR$/brsr_research/spreadi.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,41 +57,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.download.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mergi.executor": "Run",
-    "Python.ploti.executor": "Run",
-    "Python.regressioni.executor": "Run",
-    "Python.sampli.executor": "Run",
-    "Python.spreadi.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.download.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mergi.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ploti.executor&quot;: &quot;Run&quot;,
+    &quot;Python.regressioni.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sampli.executor&quot;: &quot;Run&quot;,
+    &quot;Python.spreadi.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\armaan\PycharmProjects\StYauFinancial\brsr_research" />
       <recent name="C:\Users\armaan\PycharmProjects\StYauFinancial" />
+      <recent name="C:\Users\armaan\PycharmProjects\StYauFinancial\brsr_research" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Chintu" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Chintu" />
       <option name="ENV_FILES" value="" />
@@ -128,7 +158,11 @@
       <updated>1780072540675</updated>
       <workItem from="1780072541711" duration="504000" />
       <workItem from="1780073514492" duration="2152000" />
-      <workItem from="1780075693342" duration="702000" />
+      <workItem from="1780075693342" duration="750000" />
+      <workItem from="1780311684661" duration="1094000" />
+      <workItem from="1780312806026" duration="4676000" />
+      <workItem from="1780569214446" duration="25000" />
+      <workItem from="1780940300492" duration="1859000" />
     </task>
     <task id="LOCAL-00001" summary="7">
       <option name="closed" value="true" />
@@ -138,8 +172,19 @@
       <option name="project" value="LOCAL" />
       <updated>1780076274121</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="7v2">
+      <option name="closed" value="true" />
+      <created>1780076415407</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780076415407</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="startingDirectory" value="C:\Users\armaan\PycharmProjects\StYauFinancial" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -157,7 +202,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="7" />
-    <option name="LAST_COMMIT_MESSAGE" value="7" />
+    <MESSAGE value="7v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="7v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
